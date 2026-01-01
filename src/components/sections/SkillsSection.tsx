@@ -5,31 +5,29 @@ const skillCategories = [
   {
     title: 'Frontend',
     skills: [
-      { name: 'React', level: 95 },
-      { name: 'TypeScript', level: 90 },
-      { name: 'Next.js', level: 85 },
-      { name: 'Tailwind CSS', level: 95 },
-      { name: 'Framer Motion', level: 80 },
+      { name: 'Html', level: 85 },
+      { name: 'Css', level: 75 },
+      { name: 'Tailwind CSS', level: 60 },
+      { name: 'JavaScript', level: 50 },
     ],
   },
   {
     title: 'Backend',
     skills: [
-      { name: 'Node.js', level: 85 },
       { name: 'Python', level: 75 },
-      { name: 'PostgreSQL', level: 80 },
-      { name: 'GraphQL', level: 70 },
-      { name: 'REST APIs', level: 90 },
+      { name: 'Fast Api', level: 60 },
+      { name: 'MySql', level: 60 },
+      { name: 'REST APIs', level: 55 },
     ],
   },
   {
-    title: 'Design & Tools',
+    title: 'Design & Others',
     skills: [
-      { name: 'Figma', level: 85 },
-      { name: 'Git', level: 90 },
-      { name: 'Docker', level: 70 },
-      { name: 'AWS', level: 65 },
-      { name: 'CI/CD', level: 75 },
+      { name: 'Figma', level: 80 },
+      { name: 'Artificial Intelligence', level: 65 },
+      { name: 'Machine Learning', level: 45 },
+      { name: 'Java', level: 55 },
+      { name: 'C', level: 55 }
     ],
   },
 ];
@@ -72,7 +70,7 @@ const SkillsSection = () => {
     <section id="skills" className="py-32 relative overflow-hidden">
       {/* Background */}
       <div className="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[150px] pointer-events-none" />
-      
+
       <div className="container mx-auto px-6" ref={ref}>
         {/* Section header */}
         <motion.div
@@ -89,13 +87,13 @@ const SkillsSection = () => {
           >
             03 — Expertise
           </motion.span>
-          
+
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Skills & <span className="text-gradient">Technologies</span>
           </h2>
-          
+
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Constantly evolving my toolkit to stay at the forefront of modern web development 
+            Constantly evolving my toolkit to stay at the forefront of modern web development
             and deliver exceptional digital experiences.
           </p>
         </motion.div>
@@ -127,32 +125,7 @@ const SkillsSection = () => {
           ))}
         </div>
 
-        {/* Additional stats */}
-        <motion.div
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16"
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.6 }}
-        >
-          {[
-            { label: 'Years Experience', value: '5+' },
-            { label: 'Projects Completed', value: '50+' },
-            { label: 'Happy Clients', value: '30+' },
-            { label: 'Technologies', value: '20+' },
-          ].map((stat, index) => (
-            <motion.div
-              key={stat.label}
-              className="text-center p-6 glass-card"
-              whileHover={{ y: -5, scale: 1.02 }}
-              data-cursor-hover
-            >
-              <div className="font-display text-4xl md:text-5xl font-bold text-gradient mb-2">
-                {stat.value}
-              </div>
-              <div className="text-muted-foreground text-sm">{stat.label}</div>
-            </motion.div>
-          ))}
-        </motion.div>
+
       </div>
     </section>
   );

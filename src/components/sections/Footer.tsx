@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="py-12 border-t border-border/50 relative">
       {/* Gradient line */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
-      
+
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo and copyright */}
@@ -19,19 +19,18 @@ const Footer = () => {
               className="font-display font-bold text-2xl text-gradient"
               whileHover={{ scale: 1.05 }}
             >
-              JD
+              NS
             </motion.span>
             <span className="text-muted-foreground text-sm">
-              © 2024 All rights reserved
+              © 2026 All rights reserved
             </span>
           </div>
 
           {/* Social links */}
           <div className="flex items-center gap-4">
             {[
-              { icon: Github, href: '#', label: 'GitHub' },
-              { icon: Linkedin, href: '#', label: 'LinkedIn' },
-              { icon: Twitter, href: '#', label: 'Twitter' },
+              { icon: Github, href: 'https://github.com/NimitSodhi', label: 'GitHub' },
+              { icon: Linkedin, href: 'https://linkedin.com/in/nimit-sodhi', label: 'LinkedIn' },
             ].map((social) => (
               <motion.a
                 key={social.label}

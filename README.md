@@ -1,73 +1,56 @@
-# Welcome to your Lovable project
+# Digital Canvas - Personal Portfolio
 
-## Project info
+A modern, immersive portfolio website built to showcase creative work and technical skills. This project emphasizes clean code, stunning visuals, and a smooth user experience.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🚀 Features
 
-## How can I edit this code?
+- **Responsive Design**: Fully responsive layout that works seamlessly across all devices.
+- **Interactive UI**: Engaging user interface with smooth animations and transitions.
+- **Modern Tech Stack**: Built with the latest technologies for performance and maintainability.
+- **Dynamic Content**: Sections for projects, skills, and contact information.
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
+## 🛠️ Tech Stack
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript at Any Scale
+- [Tailwind CSS](https://tailwindcss.com/) - Rapidly build modern websites without ever leaving your HTML
+- [Framer Motion](https://www.framer.com/motion/) - A production-ready motion library for React
+- [shadcn/ui](https://ui.shadcn.com/) - Beautifully designed components built with Radix UI and Tailwind CSS
 
-## How can I deploy this project?
+## 👨‍💻 Skills & Highlights
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+- **Languages**: HTML, CSS, JavaScript, TypeScript, Python, Java
+- **Design**: Figma, UI/UX Design, Design Systems
+- **Focus Areas**: Clean Code, AI/ML, Performance Optimization, Web Animations
 
-## Can I connect a custom domain to my Lovable project?
+## 📦 Installation & Setup
 
-Yes, you can!
+To get a local copy up and running, follow these simple steps:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1.  **Clone the repository**
+    ```bash
+    git clone <YOUR_GIT_URL>
+    cd digital-canvas
+    ```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Build for production**
+    ```bash
+    npm run build
+    ```
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).

@@ -5,16 +5,15 @@ import MagneticButton from '@/components/MagneticButton';
 import { useToast } from '@/hooks/use-toast';
 
 const socialLinks = [
-  { icon: Github, href: '#', label: 'GitHub' },
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-  { icon: Twitter, href: '#', label: 'Twitter' },
+  { icon: Github, href: 'https://github.com/NimitSodhi', label: 'GitHub' },
+  { icon: Linkedin, href: 'https://linkedin.com/in/nimit-sodhi', label: 'LinkedIn' },
 ];
 
 const ContactSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
   const { toast } = useToast();
-  
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -39,7 +38,7 @@ const ContactSection = () => {
     <section id="contact" className="py-32 relative overflow-hidden">
       {/* Background */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[200px] pointer-events-none" />
-      
+
       <div className="container mx-auto px-6" ref={ref}>
         {/* Section header */}
         <motion.div
@@ -56,14 +55,14 @@ const ContactSection = () => {
           >
             04 — Get in Touch
           </motion.span>
-          
+
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Let's build something{' '}
             <span className="text-gradient">amazing together</span>
           </h2>
-          
+
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Have a project in mind or just want to chat? I'm always open to discussing 
+            Have a project in mind or just want to chat? I'm always open to discussing
             new opportunities and ideas.
           </p>
         </motion.div>
@@ -80,11 +79,10 @@ const ContactSection = () => {
             {/* Name field */}
             <div className="relative">
               <motion.label
-                className={`absolute left-4 transition-all duration-300 pointer-events-none ${
-                  focusedField === 'name' || formData.name
-                    ? 'text-xs text-primary top-2'
-                    : 'text-muted-foreground top-1/2 -translate-y-1/2'
-                }`}
+                className={`absolute left-4 transition-all duration-300 pointer-events-none ${focusedField === 'name' || formData.name
+                  ? 'text-xs text-primary top-2'
+                  : 'text-muted-foreground top-1/2 -translate-y-1/2'
+                  }`}
               >
                 Your Name
               </motion.label>
@@ -103,11 +101,10 @@ const ContactSection = () => {
             {/* Email field */}
             <div className="relative">
               <motion.label
-                className={`absolute left-4 transition-all duration-300 pointer-events-none ${
-                  focusedField === 'email' || formData.email
-                    ? 'text-xs text-primary top-2'
-                    : 'text-muted-foreground top-1/2 -translate-y-1/2'
-                }`}
+                className={`absolute left-4 transition-all duration-300 pointer-events-none ${focusedField === 'email' || formData.email
+                  ? 'text-xs text-primary top-2'
+                  : 'text-muted-foreground top-1/2 -translate-y-1/2'
+                  }`}
               >
                 Your Email
               </motion.label>
@@ -126,11 +123,10 @@ const ContactSection = () => {
             {/* Message field */}
             <div className="relative">
               <motion.label
-                className={`absolute left-4 transition-all duration-300 pointer-events-none ${
-                  focusedField === 'message' || formData.message
-                    ? 'text-xs text-primary top-2'
-                    : 'text-muted-foreground top-4'
-                }`}
+                className={`absolute left-4 transition-all duration-300 pointer-events-none ${focusedField === 'message' || formData.message
+                  ? 'text-xs text-primary top-2'
+                  : 'text-muted-foreground top-4'
+                  }`}
               >
                 Your Message
               </motion.label>
@@ -162,7 +158,7 @@ const ContactSection = () => {
             {/* Info cards */}
             <div className="space-y-4">
               <motion.a
-                href="mailto:hello@portfolio.dev"
+                href="mailto:Nimit.sodhi01@gmail.com"
                 className="flex items-center gap-4 glass-card p-6 hover-glow group"
                 whileHover={{ x: 10 }}
                 data-cursor-hover
@@ -173,7 +169,7 @@ const ContactSection = () => {
                 <div>
                   <div className="text-sm text-muted-foreground">Email</div>
                   <div className="font-medium group-hover:text-primary transition-colors">
-                    hello@portfolio.dev
+                    Nimit.sodhi01@gmail.com
                   </div>
                 </div>
               </motion.a>
@@ -212,21 +208,7 @@ const ContactSection = () => {
               </div>
             </div>
 
-            {/* Availability */}
-            <motion.div
-              className="glass-card p-6 border-l-4 border-l-primary"
-              initial={{ opacity: 0 }}
-              animate={isInView ? { opacity: 1 } : {}}
-              transition={{ delay: 0.6 }}
-            >
-              <div className="flex items-center gap-2 mb-2">
-                <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                <span className="text-sm font-medium text-green-500">Available for work</span>
-              </div>
-              <p className="text-muted-foreground text-sm">
-                Currently accepting new projects. Let's discuss how I can help bring your vision to life.
-              </p>
-            </motion.div>
+
           </motion.div>
         </div>
       </div>

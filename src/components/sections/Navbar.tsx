@@ -65,11 +65,11 @@ const Navbar = () => {
               whileTap={{ scale: 0.95 }}
               onClick={(e) => {
                 e.preventDefault();
-                scrollToSection('#hero');
+                scrollToSection('#about');
               }}
               data-cursor-hover
             >
-              JD
+              NS
             </motion.a>
 
             {/* Desktop Navigation */}
